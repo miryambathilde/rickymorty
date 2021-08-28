@@ -1,10 +1,12 @@
-@import url('https://fonts.googleapis.com/css2?family=Comic+Neue:wght@400;700&display=swap');
-$yellowColor: #0AB4C6;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+$blueColor: #1adaf0;
+$greyColor: #212121;
+$greyLightColor: #333232;
 $blackColor: black;
 $whiteColor: white;
-$fontFamily: 'Comic Neue', cursive;
+$fontFamilyPoppins: 'Poppins', sans-serif;
 $fontSize: 1em;
+$fontSizeM: 1.2em;
 $marginGrid: 10px;
 $breakPointTablet: 768px;
 $breakPointDesktop: 1140px;
-

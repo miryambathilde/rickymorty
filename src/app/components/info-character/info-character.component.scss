@@ -1,11 +1,11 @@
-@import 'variables';
-@import 'grid';
+@import "variables";
+@import "grid";
 
-.personView{
+.personView {
   border: 2px solid $blackColor;
   padding: 20px;
   height: auto;
-  h2{
+  h2 {
     margin: 20px 0;
     text-decoration: underline;
     font: {
@@ -13,47 +13,46 @@
       weight: 700;
     }
   }
-  ul li{
+  ul li {
     margin: 5px 0;
-    span{
+    span {
       font-weight: 700;
     }
   }
-  nav .submenu{
+  nav .submenu {
     display: flex;
-    li{
+    li {
       width: 100%;
       background-color: $blackColor;
       color: $whiteColor;
       padding: 10px 25px;
-      border: 1px solid $yellowColor;
+      border: 1px solid $blueColor;
       cursor: pointer;
-      &:hover{
-        background-color: $yellowColor;
+      &:hover {
+        background-color: $blueColor;
         color: $blackColor;
       }
     }
   }
-  aside .grid{
-    article{
+  aside .grid {
+    article {
       background-color: $blackColor;
-      border: 2px solid $yellowColor;
+      border: 2px solid $blueColor;
       color: $whiteColor;
       padding: 20px;
-      h3{
-        color: $yellowColor;
+      h3 {
+        color: $blueColor;
         font-weight: 700;
       }
     }
   }
-  .muerto{
+  .muerto {
     color: tomato;
   }
   .vivo {
-    color: lightseagreen
+    color: lightseagreen;
   }
-   .nosesabe {
-    color: gold
+  .nosesabe {
+    color: gold;
   }
-
 }

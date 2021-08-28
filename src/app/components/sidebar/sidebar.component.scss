@@ -1,38 +1,42 @@
-@import 'variables';
+@import "variables";
 
-.logo{
-  border-bottom:  2px solid $whiteColor;
+
+.logo {
+  //border-bottom:  2px solid $whiteColor;
   margin-bottom: 20px;
 }
 
-nav{
-  .personajes li{
+nav {
+  .personajes li {
     cursor: pointer;
     color: $whiteColor;
     font-weight: 700;
     padding: 10px;
-    transition: .5s;
-    &:hover{
-      background-color: $yellowColor;
-      color: $blackColor;
+    transition: 0.5s;
+    &:hover {
+      background-color: $blueColor;
+      color: $greyLightColor;
     }
   }
-  .botones{
+  .botones {
     display: flex;
     justify-content: space-between;
-    div{
+    text-align: center;
+    div {
       width: 100%;
       margin: 0 2%;
-      border: 1px solid $yellowColor;
-      color: $yellowColor;
+      border: 1px solid $blueColor;
+      border-radius: 10px;
+      color: $blueColor;
       padding: 10px;
       cursor: pointer;
       margin-top: 10px;
-      transition: .5s;
-      &:hover{
-        border: 1px solid $blackColor;
-        color:$blackColor;
-        background-color: $yellowColor;
+      transition: 0.5s;
+      &:hover {
+        border: 1px solid $blueColor;
+        color: $greyColor;
+        background-color: $blueColor;
+        font-weight: 700;
       }
     }
   }
