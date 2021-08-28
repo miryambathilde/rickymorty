@@ -23,36 +23,37 @@
     display: flex;
     li {
       width: 100%;
-      background-color: $blackColor;
+      background-color: $greyLightColor;
       color: $whiteColor;
       padding: 10px 25px;
-      border: 1px solid $blueColor;
+      border-right: 1px solid $whiteColor;
+      //border: 1px solid $greyLightColor;
       cursor: pointer;
       &:hover {
         background-color: $blueColor;
-        color: $blackColor;
+        color: $greyColor;
       }
     }
   }
   aside .grid {
     article {
-      background-color: $blackColor;
-      border: 2px solid $blueColor;
+      background-color: $greyLightColor;
+      border: 2px solid $blueColor2;
       color: $whiteColor;
       padding: 20px;
       h3 {
-        color: $blueColor;
+        color: $blueColor2;
         font-weight: 700;
       }
     }
   }
   .muerto {
-    color: tomato;
+    color: $redColor;
   }
   .vivo {
-    color: lightseagreen;
+    color: $greenColor;
   }
   .nosesabe {
-    color: gold;
+    color: $yellowColor;
   }
 }
