@@ -6,7 +6,7 @@
     <li *ngFor="let character of arrCharacters">{{character?.name}}</li>
   </ul>
   <div class="botones">
-    <div>PREV</div>
-    <div>NEXT</div>
+    <div (click)="prevPage()">PREV</div>
+    <div (click)="nextPage()">NEXT</div>
   </div>
 </nav>

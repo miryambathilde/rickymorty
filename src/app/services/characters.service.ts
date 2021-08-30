@@ -9,7 +9,7 @@ export class CharactersService {
 
   constructor(private httpClient: HttpClient) {}
 
-  getByPage(): Promise<any> {
-    return this.httpClient.get<any>(this.baseUrl).toPromise();
+  getByPage(url: string = this.baseUrl): Promise<any> {
+    return this.httpClient.get<any>(url).toPromise();
   }
 }

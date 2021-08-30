@@ -1,0 +1,12 @@
+{
+  "$schema": "https://aka.ms/codetour-schema",
+  "title": "paginación de personajes de 20 en 20 prev y next",
+  "steps": [
+    {
+      "file": "src/app/components/sidebar/sidebar.component.ts",
+      "description": "paginacion next y prev",
+      "line": 29
+    }
+  ],
+  "ref": "0d6192cc6182c4a8656ad0fcf8a124c7f0449b31"
+}
