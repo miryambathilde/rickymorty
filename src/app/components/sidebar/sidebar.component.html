@@ -3,10 +3,7 @@
 </figure>
 <nav>
   <ul class="personajes">
-    <li>Rick</li>
-    <li>Morty</li>
-    <li>Rick</li>
-    <li>Morty</li>
+    <li *ngFor="let character of arrCharacters">{{character?.name}}</li>
   </ul>
   <div class="botones">
     <div>PREV</div>

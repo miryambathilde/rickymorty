@@ -4,12 +4,14 @@
 .logo {
   //border-bottom:  2px solid $whiteColor;
   margin-bottom: 20px;
+  width: auto;
 }
 
 nav {
   .personajes li {
     cursor: pointer;
     color: $whiteColor;
+    //font-size: 90%;
     font-weight: 700;
     padding: 10px;
     transition: 0.5s;

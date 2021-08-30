@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { CharactersService } from "src/app/services/characters.service";
+import { Character } from "../interfaces/character.interface";
 
 @Component({
   selector: 'app-sidebar',
@@ -7,9 +9,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor() { }
+  arrCharacters: Character[] = [];
 
-  ngOnInit(): void {
+  constructor(private charactersService: CharactersService) { }
+
+  async ngOnInit(): Promise<any> {
+    const response = await this.charactersService.getByPage();
+    //console.log(results)
+    this.arrCharacters = response.results;
   }
 
 }
