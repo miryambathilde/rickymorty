@@ -7,10 +7,10 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './components/sidebar/sidebar.component';
 import { InfoCharacterComponent } from './components/info-character/info-character.component';
 import { HomeComponent } from './components/home/home.component';
-import { LocationComponent } from './components/location/location.component';
-import { EpisodesComponent } from './components/episodes/episodes.component';
-import { CardLocationComponent } from './components/card-location/card-location.component';
-import { CardEpisodesComponent } from './components/card-episodes/card-episodes.component';
+import { LocationsComponent } from './components/info-character/locations/locations.component';
+import { EpisodesComponent } from "./components/info-character/episodes/episodes.component";
+import { CardLocationComponent } from "./components/card-location/card-location.component";
+import { CardEpisodesComponent } from "./components/card-episodes/card-episodes.component";
 
 @NgModule({
   declarations: [
@@ -18,10 +18,10 @@ import { CardEpisodesComponent } from './components/card-episodes/card-episodes.
     SidebarComponent,
     InfoCharacterComponent,
     HomeComponent,
-    LocationComponent,
+    LocationsComponent,
     EpisodesComponent,
-    CardLocationComponent,
-    CardEpisodesComponent
+    CardEpisodesComponent,
+    CardLocationComponent
   ],
   imports: [BrowserModule, AppRoutingModule, HttpClientModule],
   providers: [],

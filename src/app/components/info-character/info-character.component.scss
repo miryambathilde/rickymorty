@@ -34,19 +34,12 @@
         color: $greyColor;
       }
     }
-  }
-  aside .grid {
-    article {
-      background-color: $greyLightColor;
-      border: 2px solid $blueColor2;
-      color: $whiteColor;
-      padding: 20px;
-      h3 {
-        color: $blueColor2;
-        font-weight: 700;
-      }
+    .active {
+      background-color: $blueColor;
+      color: $greyColor;
     }
   }
+
   .dead {
     color: $redColor;
   }
