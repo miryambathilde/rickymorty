@@ -20,6 +20,11 @@ nav {
       color: $greyLightColor;
     }
   }
+
+  .personajes .active {
+      background-color: $blueColor2;
+      color: $greyLightColor;
+  }
   .botones {
     display: flex;
     justify-content: space-between;
