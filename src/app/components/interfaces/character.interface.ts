@@ -5,10 +5,10 @@ export interface Character {
   species: string;
   type: string;
   gender: string;
-  origin: any;
-  location: any;
+  origin: object;
+  location: object;
   image: string;
-  episode: Array<String>;
+  episode: string[];
   url: string;
   created: string;
 }
