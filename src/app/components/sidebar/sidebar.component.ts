@@ -23,16 +23,20 @@ export class SidebarComponent implements OnInit {
   }
 
   async prevPage() {
-    const response = await this.charactersService.getByPage(this.prev);
-    this.next = response.info.next;
-    this.prev = response.info.prev;
-    this.arrCharacters = response.results;
+    if (this.prev !== null) {
+      const response = await this.charactersService.getByPage(this.prev);
+      this.next = response.info.next;
+      this.prev = response.info.prev;
+      this.arrCharacters = response.results;
+    }
   }
 
   async nextPage() {
-    const response = await this.charactersService.getByPage(this.next);
-    this.next = response.info.next;
-    this.prev = response.info.prev;
-    this.arrCharacters = response.results;
+    if (this.next !== null) {
+      const response = await this.charactersService.getByPage(this.next);
+      this.next = response.info.next;
+      this.prev = response.info.prev;
+      this.arrCharacters = response.results;
+    }
   }
 }
