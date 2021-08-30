@@ -1,24 +1,24 @@
 <section class="personView">
-  <h2>Nombre del personaje</h2>
+  <h2>{{character?.name}}</h2>
   <div class="grid">
     <figure class="col-12 col-t-3">
       <img
-        src="https://lh3.googleusercontent.com/proxy/RdlS8nSskRBZHqNPLGRUTEJ32TJbgis1PI55OnhGysL-vSAJktBEdl3grDldTzuZQRtItlyQj-uPIOvcQUHHjJiDCkYg3XYrjpicFO_BW1dodCRpy2k"
-        alt="imagen de muestra">
+        [src]="character?.image"
+        [alt]="character?.name">
     </figure>
     <div class="col-12 col-t-9">
       <ul>
-        <li>Especie: <span>Humano</span> </li>
-        <li>Genero: <span>Masculino</span></li>
-        <li>Estado: <span class="muerto">Muerto</span></li>
+        <li>Specie: <span>{{character?.species}}</span></li>
+        <li>Gender: <span>{{character?.gender}}</span></li>
+        <li>Status: <span [ngClass]="{'dead': character?.status === 'Dead', 'alive': character?.status === 'Alive', 'unknown' : character?.status === 'unknown'}" >{{character?.status}}</span></li>
       </ul>
     </div>
   </div>
   <hr>
   <nav>
     <ul class="submenu">
-      <li>Episodios</li>
-      <li>Localizaciones</li>
+      <li>Episodes</li>
+      <li>Locations</li>
     </ul>
   </nav>
   <aside>

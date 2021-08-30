@@ -47,13 +47,13 @@
       }
     }
   }
-  .muerto {
+  .dead {
     color: $redColor;
   }
-  .vivo {
+  .alive {
     color: $greenColor;
   }
-  .nosesabe {
+  .unknown {
     color: $yellowColor;
   }
 }
