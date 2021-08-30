@@ -1,0 +1,25 @@
+@import "variables";
+@import 'grid';
+
+h2 {
+  margin: 12px 0;
+  font: {
+    size: 120%;
+    weight: 700;
+  }
+}
+
+aside .grid {
+  article {
+    background-color: $greyLightColor;
+    border: 2px solid $blueColor2;
+    color: $whiteColor;
+    padding: 20px;
+    width: auto;
+  }
+
+  h3 {
+    font-weight: 700;
+    color: $blueColor;
+  }
+}

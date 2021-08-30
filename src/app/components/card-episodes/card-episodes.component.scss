@@ -1,8 +1,13 @@
 @import "variables";
 
-aside .grid {
-    h3 {
-      color: $blueColor2;
-      font-weight: 700;
-    }
+h3 {
+  color: $blueColor;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+ul {
+  li {
+    margin-top: 8px;
+  }
 }

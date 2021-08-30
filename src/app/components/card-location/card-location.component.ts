@@ -1,4 +1,8 @@
+import { Input } from "@angular/core";
 import { Component, OnInit } from '@angular/core';
+import { LocationsService } from "src/app/services/locations.service";
+import { Location } from "../interfaces/location.interface";
+
 
 @Component({
   selector: 'app-card-location',
@@ -7,9 +11,20 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardLocationComponent implements OnInit {
 
-  constructor() { }
+  @Input() url: string = "";
+  localizacion: Location | undefined;
 
-  ngOnInit(): void {
+  constructor(private locationsService: LocationsService) { }
+
+  ngOnInit() {}
+
+  async ngOnChanges(): Promise<any> {
+    if (this.url !== null) {
+      try {
+        this.localizacion = await this.locationsService.getByUrl(this.url);
+      } catch (err: any) {
+        console.log(err)
+      }
+    }
   }
-
 }

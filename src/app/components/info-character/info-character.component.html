@@ -18,7 +18,7 @@
   <nav>
     <ul class="submenu">
       <li routerLinkActive="active" [routerLink]="['/character', character?.id, 'episodes']">Episodes</li>
-      <li [routerLink]="['/character', character?.location, 'locations']" >Locations</li>
+      <li [routerLink]="['/character', character?.id, 'locations']" >Locations</li>
     </ul>
   </nav>
   <router-outlet></router-outlet>

@@ -30,13 +30,15 @@
       //border: 1px solid $greyLightColor;
       cursor: pointer;
       &:hover {
-        background-color: $blueColor;
-        color: $greyColor;
+        background-color: $blueColor2;
+        color: $greyLightColor;
+        font-weight: 700;
       }
     }
     .active {
-      background-color: $blueColor;
-      color: $greyColor;
+      background-color: $blueColor2;
+      color: $greyLightColor;
+      font-weight: 700;
     }
   }
 
