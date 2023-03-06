@@ -5,6 +5,7 @@
   color: $whiteColor;
   background-image: url('../../../assets/images/background-rickandmorty.jpg');
   height: calc(100vh + 40px);
+  background-size: cover;
   border: 2px solid $greyLightColor;
   padding: 20px;
   display: flex;
