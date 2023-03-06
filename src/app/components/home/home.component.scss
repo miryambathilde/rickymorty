@@ -1,10 +1,10 @@
 @import 'variables';
 
-.content{
+.content {
   //background-color: $greyColor;
   color: $whiteColor;
   background-image: url('../../../assets/images/background-rickandmorty.jpg');
-  height: calc(100vh + 40px);
+  height: calc(100vh + 88px);
   background-size: cover;
   border: 2px solid $greyLightColor;
   padding: 20px;
@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  h1{
+  h1 {
     font-size: $fontSize * 2.5;
     margin-bottom: 20px;
     font-weight: 700;
