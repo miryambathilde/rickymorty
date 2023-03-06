@@ -4,9 +4,9 @@
   //background-color: $greyColor;
   color: $whiteColor;
   background-image: url('../../../assets/images/background-rickandmorty.jpg');
+  height: calc(100vh + 40px);
   border: 2px solid $greyLightColor;
   padding: 20px;
-  height: calc(100vh - #{$marginGrid * 2} );
   display: flex;
   justify-content: center;
   align-items: center;
